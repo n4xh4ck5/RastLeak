@@ -1,0 +1,6 @@
+pypdf2
+python-docx 
+beautifulsoup4 
+wget
+argparse
+requests
