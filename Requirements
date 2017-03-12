@@ -1,0 +1,7 @@
+Python 2.7
+Analyze metadata
+  pip install pypdf2
+  pip install python-docx 
+ python wget
+  sudo apt-get install python-pip
+  sudo pip install wget
