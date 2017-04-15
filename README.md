@@ -9,8 +9,9 @@ Module dependencies (installable via pip):
   
   -wget
   
+  Please, Going to requirements.txt to more information.
   
 # How to use
 
-python RastLeak_1_0.py -h
+python RastLeak_1_X.py -h
 
