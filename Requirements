@@ -5,3 +5,11 @@ Analyze metadata
  python wget
   sudo apt-get install python-pip
   sudo pip install wget
+ import libraries:
+  requests
+  json
+  xlsxwriter
+  beautifulsoup
+  urlparse
+  argparse
+  ssl
