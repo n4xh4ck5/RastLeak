@@ -15,10 +15,10 @@ The last stable version is rastleak_1_4.py
 
 $python rastleak_1_4-py -h
 
-usage: rastleak_1_4.py [-h] [-d DOMAIN] -n SEARCH -e EXT [-f EXPORT]
+    usage: rastleak_1_4.py [-h] [-d DOMAIN] -n SEARCH -e EXT [-f EXPORT]
 
 
-This script searchs files indexed in the main searches of a domain to detect a possible leak information
+    This script searchs files indexed in the main searches of a domain to detect a possible leak information
 
 
 optional arguments:
