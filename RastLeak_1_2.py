@@ -251,7 +251,7 @@ print"  | | \ \ (_| \__ \ |_| |___|  __/ (_| |   < "
 print"  |_|  \_\__,_|___/\__|______\___|\__,_|_|\_\""
 print "\n"
 print """** Tool to automatic leak information using Bing Hacking
-** Version 1.0
+** Version 1.2
 ** Author: Ignacio Brihuega Rodriguez a.k.a N4xh4ck5
 ** DISCLAMER This tool was developed for educational goals. 
 ** The author is not responsible for using to others goals.
