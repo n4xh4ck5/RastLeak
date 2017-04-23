@@ -1,22 +1,8 @@
-#libraries and version
+#Module dependencies (installable via pip):
 PyPDF2==1.26.0
 python-docx==0.8.6
 beautifulsoup4==4.5.1
 wget==3.2
 requests==2.10.0
+argparse
 Python 2.7
-#Dependencies
-Analyze metadata
-  pip install pypdf2
-  pip install python-docx 
- python wget
-  sudo apt-get install python-pip
-  sudo pip install wget
- import libraries:
-  requests
-  json
-  xlsxwriter
-  beautifulsoup
-  urlparse
-  argparse
-  ssl
