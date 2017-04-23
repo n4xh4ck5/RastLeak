@@ -13,7 +13,7 @@ python rastleak.py
 
 The last stable version is rastleak_1_4.py
 
-$python rastleak_1_4-py -h
+$python rastleak_1_4.py -h
 
     usage: rastleak_1_4.py [-h] [-d DOMAIN] -n SEARCH -e EXT [-f EXPORT]
 
