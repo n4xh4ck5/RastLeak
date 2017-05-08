@@ -11,11 +11,11 @@ pip install -r requirements.txt
 
 python rastleak.py
 
-The last stable version is rastleak_1_4.py
+The last stable version is rastleak.py
 
-$python rastleak_1_3.py -h
+$python rastleak_py -h
 
-    usage: rastleak_1_3.py [-h] [-d DOMAIN] -n SEARCH -e EXT [-f EXPORT]
+    usage: rastleak.py [-h] [-d DOMAIN] -n SEARCH -e EXT [-f EXPORT]
 
 
     This script searchs files indexed in the main searches of a domain to detect a possible leak information
