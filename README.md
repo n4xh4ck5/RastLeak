@@ -15,15 +15,20 @@ The last stable version is rastleak.py
 
 $python rastleak.py -h
 
+
 usage: rastleak.py [-h] -d DOMAIN -o OPTION -n SEARCH -e EXT [-f EXPORT]
+
 
 This script searchs files indexed in the main searches of a domain to detect a possible leak information
 
 optional arguments:
 
+
   -h, --help            show this help message and exit
   
+  
   -d DOMAIN, --domain DOMAIN
+ 
   
                         The domain which it wants to search
                         
