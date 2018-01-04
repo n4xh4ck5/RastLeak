@@ -1,13 +1,16 @@
 # RastLeak
+
 Tool to automatic leak information using Hacking with engine searches
 
 # How to install
 
-Install requirements with:
+<pre> git clone https://github.com/n4xh4ck5/RastLeak.git </pre>
 
-pip install -r requirements.txt
+Install dependencies with pip:
 
-#How to use:
+<pre> pip install -r requirements.txt </pre>
+
+# Usage
 
 python rastleak.py
 
@@ -57,4 +60,15 @@ optional arguments:
                         
                         	1.json (by default)
                           
-                        	2.xlsx               
+                        	2.xlsx       
+                          
+# Author
+
+Ignacio Brihuega Rodríguez aka n4xh4ck5
+Twitter: @Nachoo_91
+Web: fwhibbit.es
+
+# Disclamer
+
+The use of this tool is your responsability. I hereby disclaim any responsibility for actions taken with this tool.                          
+                                                  
