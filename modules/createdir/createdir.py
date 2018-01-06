@@ -12,7 +12,6 @@ def CreateDir(target):
 		if not os.path.exists(target):
 			os.mkdir(target)
 			temp = str(target) + '/temp'
-			print temp
 			os.mkdir(temp)
 
 	except Exception as e:
