@@ -31,6 +31,7 @@ import os
 sys.setdefaultencoding('utf8')
 from time import sleep
 import re #Expression regular to parse Google with Beautifoul Soup
+VERSION ="2.2"
 #Import modules
 from modules.deleteduplicate import *
 from modules.searchgoogle import *
@@ -49,7 +50,7 @@ def banner ():
             |_|  \_\__,_|___/\__|______\___|\__,_|_|\_\ """
 	print "\n"
 	print """** Tool to automatic leak information using Google and Bing Hacking
-	** Version 2.1
+	** Version 2.2
 	** Author: Ignacio Brihuega Rodriguez a.k.a N4xh4ck5
 	** Github: https://github.com/n4xh4ck5/
 	** DISCLAMER This tool was developed for educational goals. 
@@ -65,6 +66,7 @@ def help ():
 def main (argv):
 	parser = argparse.ArgumentParser(description="This script searchs files indexed in the main searches of a domain to detect a possible leak information", formatter_class=RawTextHelpFormatter)
 	parser.add_argument('-d','--domain', help="The domain which it wants to search",required=True)
+	parser.add_argument('-v','--version', help="Display the version (v=yes)",required=False)
 	parser.add_argument('-o','--option', help="Indicate the option of search\n\t1.Searching leak information into the target\n\t2.Searching leak information outside target",required=True)
 	parser.add_argument('-n','--search', help="Indicate the number of the search which you want to do",required=True)
 	parser.add_argument('-e','--ext', help="Indicate the option of display:\n\t1-Searching the domains where these files are found\n\t2-Searching ofimatic files\n\n", required=True)
@@ -78,13 +80,18 @@ def main (argv):
 	catpcha = False
 	url=[]
 	url_google =[]
+	url_google_final = []
 	url_bing = []
 	N = int (args.search)
 	target=args.domain
 	file_ext= int(args.ext)
 	output = args.export
+	version = args.version
 	export = None
 	try:
+		if version is not None or version == 'yes':
+			print "\nVersion: " + str(VERSION)
+			exit(0)
 		#Create a folder with the name of the target
 		createdir.CreateDir(target)
 		if output is None:
@@ -107,8 +114,9 @@ def main (argv):
 			#Into the target
 			try:
 				url_google = searchgoogle.SearchGoogle(N,target,option)
+				[url_google_final.append(i) for i in url_google if not i in url_google_final] 
 				#Called the function to display the results
-				showresults.ShowResults(url_google,target,option,catpcha)
+				showresults.ShowResults(url_google_final,target,option,catpcha)
 				if len (url_google) < 2:
 					catpcha = True
 			except Exception as e:
@@ -122,7 +130,6 @@ def main (argv):
 					#Call design the dork
 					try:
 						url_bing = searchbing.DesignDork(N,target,file_ext,initial)
-						print url_bing
 						ShowResults(url_bing,target,option,catpcha)
 					except: 
 						pass
